@@ -1,0 +1,12 @@
+node_modules
+.env
+.git
+npm-debug.log*
+tests
+README.md
+socketTest.js
+test-db-connection.js
+uploads
+coverage
+Dockerfile
+docker-compose.yml
