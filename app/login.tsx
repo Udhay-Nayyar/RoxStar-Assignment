@@ -1,0 +1,24 @@
+import { useRouter } from 'expo-router';
+import { useState, ReactNode } from 'react';
+import { StyleSheet, Text, TextInput, View, Pressable, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { Palette } from '@/constants/theme';
+import { useAuthStore } from '@/stores/auth';
+
+function LoginPrimaryButton({ label, onPress, icon, disabled = false }: { label: string; onPress: () => void; icon?: keyof typeof MaterialIcons.glyphMap; disabled?: boolean }) {
+  return <Pressable accessibilityRole="button" disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.primaryButton, disabled && styles.disabledButton, pressed && !disabled && styles.pressed]}>{icon ? <MaterialIcons name={icon} size={19} color={disabled ? Palette.muted : '#FFFFFF'} /> : null}<Text style={[styles.primaryLabel, disabled && styles.disabledLabel]}>{label}</Text></Pressable>;
+}
+
+function LoginScreen({ children, scroll = true }: { children: ReactNode; scroll?: boolean }) {
+  const content = <View style={[styles.content, !scroll && { flex: 1 }]}>{children}</View>;
+  return <SafeAreaView style={styles.safe}><View style={styles.brandBar}><Text style={styles.brandName}>RoxStar</Text></View>{scroll ? <ScrollView showsVerticalScrollIndicator={false}>{content}</ScrollView> : content}</SafeAreaView>;
+}
+
+export default function Login() {
+  const router = useRouter(); const signIn = useAuthStore((s) => s.signIn); const error = useAuthStore((s) => s.error); const [name, setName] = useState(''); const [deviceId, setDeviceId] = useState(''); const [working, setWorking] = useState(false); const [submitError, setSubmitError] = useState('');
+  const submit = async () => { if (working) return; setWorking(true); setSubmitError(''); try { await signIn(name, deviceId); router.replace('/(tabs)'); } catch (e) { setSubmitError(e instanceof Error ? e.message : 'Unable to continue. Please try again.'); } finally { setWorking(false); } };
+  return <LoginScreen scroll={false}><View style={styles.hero}><Text style={styles.kicker}>VOICE ROOM • LIVE SPIN</Text><Text style={styles.logo}>ROXSTAR</Text><Text style={styles.copy}>Create a room, share your voice, and let the wheel decide.</Text></View><View style={styles.card}><Text style={styles.title}>Enter the room</Text><Text style={styles.label}>Display name</Text><TextInput autoFocus value={name} onChangeText={setName} placeholder="e.g. Udhay" placeholderTextColor={Palette.muted} style={styles.input} /><Text style={styles.label}>Device ID</Text><TextInput value={deviceId} onChangeText={setDeviceId} placeholder="e.g. android-udhay-001" placeholderTextColor={Palette.muted} style={styles.input} /><Text style={styles.note}>The backend uses this username and device ID to recognize your profile and room membership.</Text>{error || submitError ? <Text style={styles.error}>{error || submitError}</Text> : null}<LoginPrimaryButton label={working ? 'Continuing...' : 'Continue'} icon="arrow-forward" disabled={working} onPress={() => void submit()} /></View></LoginScreen>;
+}
+
+const styles = StyleSheet.create({ hero: { paddingTop: 52, paddingBottom: 36 }, kicker: { color: Palette.pink, fontSize: 12, fontWeight: '800', letterSpacing: 1.4 }, logo: { color: Palette.text, fontSize: 42, fontWeight: '900', letterSpacing: 1.5, marginTop: 10 }, copy: { color: Palette.muted, fontSize: 16, lineHeight: 24, marginTop: 12, maxWidth: 270 }, card: { backgroundColor: Palette.surface, borderWidth: 1, borderColor: Palette.border, borderRadius: 24, padding: 22 }, title: { color: Palette.text, fontSize: 22, fontWeight: '800' }, label: { color: Palette.muted, fontSize: 13, fontWeight: '700', marginTop: 24, marginBottom: 8 }, input: { height: 54, borderRadius: 14, borderWidth: 1, borderColor: Palette.border, color: Palette.text, paddingHorizontal: 15, fontSize: 16, backgroundColor: Palette.background }, note: { color: Palette.muted, fontSize: 12, lineHeight: 18, marginTop: 10, marginBottom: 20 }, error: { color: Palette.danger, marginBottom: 12 }, safe: { flex: 1, backgroundColor: Palette.background }, brandBar: { minHeight: 54, paddingHorizontal: 24, justifyContent: 'center', borderBottomWidth: 1, borderBottomColor: Palette.border }, brandName: { color: Palette.text, fontSize: 21, fontWeight: '800', letterSpacing: 0.2 }, content: { padding: 24, paddingBottom: 36 }, primaryButton: { minHeight: 52, paddingHorizontal: 18, borderRadius: 14, backgroundColor: Palette.accent, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 }, disabledButton: { backgroundColor: Palette.surface, borderWidth: 1, borderColor: Palette.border }, primaryLabel: { color: '#FFFFFF', fontSize: 16, fontWeight: '700' }, disabledLabel: { color: Palette.muted }, pressed: { opacity: 0.75 } });

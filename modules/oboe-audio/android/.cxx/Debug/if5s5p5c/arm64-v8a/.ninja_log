@@ -1,0 +1,21 @@
+# ninja log v5
+15	4520	8114266510138872	CMakeFiles/oboe-audio.dir/AudioEngine.cpp.o	3b47e3fecb480e2c
+36	4533	8114266510529136	CMakeFiles/oboe-audio.dir/jni-bridge.cpp.o	8b1884503c7bbb08
+83	2685	8114235175741028	CMakeFiles/oboe-audio.dir/EchoEffect.cpp.o	d11e6e49d71e794a
+50	5122	8114266516278062	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	c77e0d4490721144
+5123	5544	8114266519859481	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/arm64-v8a/liboboe-audio.so	d810992812089594
+143	5504	8114293626709813	CMakeFiles/oboe-audio.dir/AudioEngine.cpp.o	ea2620dcd60af734
+128	5532	8114293627233485	CMakeFiles/oboe-audio.dir/jni-bridge.cpp.o	412d187572585a48
+97	6273	8114293634552516	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	4b3c6362e5775cb1
+113	6352	8114293634812187	CMakeFiles/oboe-audio.dir/EchoEffect.cpp.o	a249f8747d311507
+6352	7088	8114293642550386	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/arm64-v8a/liboboe-audio.so	9ceb8f391a2d1b2f
+35	3502	8114318900210226	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	4b3c6362e5775cb1
+3503	3719	8114318902513122	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/arm64-v8a/liboboe-audio.so	9ceb8f391a2d1b2f
+1	32	0	clean	ad10a8875596c09b
+156	4324	8114322697386574	CMakeFiles/oboe-audio.dir/AudioEngine.cpp.o	ea2620dcd60af734
+102	4337	8114322697711323	CMakeFiles/oboe-audio.dir/jni-bridge.cpp.o	412d187572585a48
+90	4931	8114322703293167	CMakeFiles/oboe-audio.dir/EchoEffect.cpp.o	a249f8747d311507
+73	5086	8114322704711655	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	4b3c6362e5775cb1
+5087	5424	8114322708508228	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/arm64-v8a/liboboe-audio.so	9ceb8f391a2d1b2f
+184	9314	8114339547597827	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	4b3c6362e5775cb1
+9317	9767	8114339552329411	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/arm64-v8a/liboboe-audio.so	9ceb8f391a2d1b2f

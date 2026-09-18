@@ -1,0 +1,3 @@
+C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/.cxx/Debug/if5s5p5c/x86_64/CMakeFiles/oboe-audio.dir
+C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/.cxx/Debug/if5s5p5c/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/.cxx/Debug/if5s5p5c/x86_64/CMakeFiles/rebuild_cache.dir

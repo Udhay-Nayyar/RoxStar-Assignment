@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "C:\\Users\\udhay\\OneDrive\\Desktop\\ROXSTAR FRONTEND\\modules\\oboe-audio\\android\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\udhay\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\udhay\\OneDrive\\Desktop\\ROXSTAR FRONTEND\\modules\\oboe-audio\\android\\.cxx\\Debug\\if5s5p5c\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\udhay\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\udhay\\OneDrive\\Desktop\\ROXSTAR FRONTEND\\modules\\oboe-audio\\android\\.cxx\\Debug\\if5s5p5c\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "oboe-audio::@6890427a1f51a3e7e1df": {
+      "artifactName": "oboe-audio",
+      "abi": "x86_64",
+      "output": "C:\\Users\\udhay\\OneDrive\\Desktop\\ROXSTAR FRONTEND\\modules\\oboe-audio\\android\\build\\intermediates\\cxx\\Debug\\if5s5p5c\\obj\\x86_64\\liboboe-audio.so",
+      "runtimeFiles": [
+        "C:\\Users\\udhay\\.gradle\\caches\\9.3.1\\transforms\\f13f7dddd67bc25d3cc8b7a0bf28c840\\workspace\\transformed\\oboe-1.9.3\\prefab\\modules\\oboe\\libs\\android.x86_64\\liboboe.so"
+      ]
+    }
+  }
+}

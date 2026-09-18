@@ -1,0 +1,21 @@
+# ninja log v5
+32	3295	8114266669509200	CMakeFiles/oboe-audio.dir/AudioEngine.cpp.o	f9557700f1a9ac71
+50	3300	8114266669569554	CMakeFiles/oboe-audio.dir/jni-bridge.cpp.o	307b5920b10d4464
+14	3851	8114266675135369	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	a8539a077f521bd3
+78	7667	8114237760369109	CMakeFiles/oboe-audio.dir/EchoEffect.cpp.o	63d713bbc3e5243
+3851	4131	8114266677936114	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/x86/liboboe-audio.so	18f9d14c13fe9373
+83	3328	8114293771539454	CMakeFiles/oboe-audio.dir/AudioEngine.cpp.o	181f6197739c2c1e
+71	3350	8114293771539454	CMakeFiles/oboe-audio.dir/jni-bridge.cpp.o	41eefdca63ec109c
+53	3457	8114293773532952	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	eb426ecde7bf9572
+25	3543	8114293773715381	CMakeFiles/oboe-audio.dir/EchoEffect.cpp.o	8c43b2c93fa26944
+3543	4167	8114293779924586	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/x86/liboboe-audio.so	3e250c5ea59f800a
+12	1623	8114318963880758	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	eb426ecde7bf9572
+1623	1811	8114318965692048	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/x86/liboboe-audio.so	3e250c5ea59f800a
+0	31	0	clean	ad10a8875596c09b
+44	2488	8114322780731878	CMakeFiles/oboe-audio.dir/jni-bridge.cpp.o	41eefdca63ec109c
+61	2492	8114322780701893	CMakeFiles/oboe-audio.dir/AudioEngine.cpp.o	181f6197739c2c1e
+13	2933	8114322785295456	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	eb426ecde7bf9572
+28	2971	8114322785730766	CMakeFiles/oboe-audio.dir/EchoEffect.cpp.o	8c43b2c93fa26944
+2971	3186	8114322787867280	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/x86/liboboe-audio.so	3e250c5ea59f800a
+54	5725	8114339687440148	CMakeFiles/oboe-audio.dir/OboeRecorder.cpp.o	eb426ecde7bf9572
+5727	6423	8114339694272876	C:/Users/udhay/OneDrive/Desktop/ROXSTAR FRONTEND/modules/oboe-audio/android/build/intermediates/cxx/Debug/if5s5p5c/obj/x86/liboboe-audio.so	3e250c5ea59f800a

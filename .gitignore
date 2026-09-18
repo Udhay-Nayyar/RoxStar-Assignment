@@ -1,0 +1,28 @@
+@"
+node_modules/
+.expo/
+dist/
+web-build/
+.env
+.env.*
+!.env.example
+
+*.log
+
+# Windows
+AppData/
+Temp/
+tmp/
+
+# IDE
+.vscode/
+.idea/
+
+# Android
+.gradle/
+android/.gradle/
+android/local.properties/
+
+# Build
+build/
+"@ | Out-File -Encoding utf8 .gitignore

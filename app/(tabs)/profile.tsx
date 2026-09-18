@@ -1,0 +1,11 @@
+import { StyleSheet, Text, View } from 'react-native';
+import { PrimaryButton, Screen, ScreenHeader, SectionTitle } from '@/components/roxstar-ui';
+import { Palette } from '@/constants/theme';
+import { API_URL } from '@/services/apiService';
+import { useAuthStore } from '@/stores/auth';
+
+export default function ProfileScreen() {
+  const user = useAuthStore((s) => s.user); const signOut = useAuthStore((s) => s.signOut); const initials = user?.name.slice(0, 2).toUpperCase() ?? 'R';
+  return <Screen><ScreenHeader title="Profile" subtitle="Your local session" /><View style={styles.profile}><View style={styles.avatar}><Text style={styles.initials}>{initials}</Text></View><View><Text style={styles.name}>{user?.name}</Text><Text style={styles.sub}>Connected as a room participant</Text></View></View><SectionTitle>Backend</SectionTitle><View style={styles.card}><Text style={styles.label}>API / Socket.IO address</Text><Text style={styles.url}>{API_URL}</Text><Text style={styles.note}>Set EXPO_PUBLIC_API_URL before starting Expo when using a real phone or your deployed backend.</Text></View><SectionTitle>About this build</SectionTitle><Text style={styles.about}>ROXSTAR uses your backend’s room REST endpoints and Socket.IO events. Voice drafts remain on the phone until you share one into a room.</Text><View style={styles.logout}><PrimaryButton label="Switch profile" icon="logout" onPress={() => void signOut()} /></View></Screen>;
+}
+const styles = StyleSheet.create({ profile: { flexDirection: 'row', alignItems: 'center', marginBottom: 36 }, avatar: { width: 64, height: 64, borderRadius: 22, backgroundColor: Palette.accentSoft, alignItems: 'center', justifyContent: 'center', marginRight: 15, borderWidth: 1, borderColor: Palette.border }, initials: { color: Palette.pink, fontWeight: '900', fontSize: 22 }, name: { color: Palette.text, fontSize: 22, fontWeight: '900' }, sub: { color: Palette.muted, marginTop: 4 }, card: { backgroundColor: Palette.surface, borderWidth: 1, borderColor: Palette.border, borderRadius: 16, padding: 16 }, label: { color: Palette.muted, fontSize: 12, fontWeight: '700' }, url: { color: Palette.pink, fontSize: 14, fontWeight: '800', marginTop: 8 }, note: { color: Palette.muted, lineHeight: 18, marginTop: 11, fontSize: 12 }, about: { color: Palette.muted, fontSize: 14, lineHeight: 22 }, logout: { marginTop: 36 } });
