@@ -116,7 +116,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=roxstar
 DB_USER=postgres
-DB_PASSWORD=<your password>
+DB_PASSWORD=****
 ```
 
 **Run the schema migration** (creates all 7 tables):
